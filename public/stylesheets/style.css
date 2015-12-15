@@ -1,0 +1,47 @@
+{<!--html5doctor class="com" Reset Stylesheet-->
+<!-- v1 class="6 1"-->
+<!-- Updated: 2010-09-17 -->
+<!-- Author -->
+<!-- Richard Clark - http://richclarkdesign.com/Richard>
+<!-- Author -->
+<!-- Twitter @rich_clark -->}
+body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, address, cite, code,
+body {
+}
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+  display:block;
+}
+nav ul {
+  list-style:none;
+}
+blockquote, q {
+  quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+.panel {
+  margin: 5% 20% 5% 20%;
+  border: 20px none white;
+}
+.navbar {
+  margin: 5% 15% 5% 15%;
+}
+.panel-footer {
+  margin: 5% 15% 5% 15%;
+}

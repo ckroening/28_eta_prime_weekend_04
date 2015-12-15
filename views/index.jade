@@ -1,0 +1,151 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Rando Corp. Applications
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    // Optional Bootstrap theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='style.css')
+  h1(align='center') Rando Corp. Application
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  style(type='text/css').
+    .bs-example{
+      margin: 20px;
+    }
+  body
+    .bs-example
+      nav.navbar.navbar-default(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-target='#navbarCollapse', data-toggle='collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Rando Corp. Application
+        // Collection of nav links, forms, and other content for toggling
+        #navbarCollapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='admin.html') Admin
+    .panel.panel-default
+      .panel-heading Rando Corp. Application Form
+      .panel-body
+        | Please complete the fields below.
+        form.form-horizontal
+          h3 Applicant Information
+          .form-group
+            label.control-label.col-xs-2(for='firstName') First Name
+            .col-xs-10
+              input#firstName.form-control(type='text', placeholder='First Name')
+          .form-group
+            label.control-label.col-xs-2(for='lastName') Last Name
+            .col-xs-10
+              input#lastName.form-control(type='text', placeholder='Last Name')
+          .form-group
+            label(for='desiredJob') Desired Job:
+            select#desiredJob.form-control
+              option Executive Assistant
+              option Counselor
+              option Cleaner
+              option Developer
+              option Boss
+              option Marketing
+              option HR
+          .checkbox
+            label
+              input(type='checkbox')
+              | Remote
+          .checkbox
+            label
+              input(type='checkbox')
+              | Specific Location (include here):
+            input#checkbox.form-control(type='text', ,='', placeholder='Location')
+          .form-group
+            label.control-label.col-xs-2(for='city') City
+            .col-xs-10
+              input#city.form-control(type='text', placeholder='City')
+          .form-group
+            label.control-label.col-xs-2(for='state') State
+            .col-xs-10
+              input#state.form-control(type='text', placeholder='State')
+          .form-group
+            label.control-label.col-xs-2(for='inputEmail') Email
+            .col-xs-10
+              input#inputEmail.form-control(type='email', placeholder='Email')
+          .empHistory
+            h3 Employment History
+            .position
+              h4 Most Recent Position:
+              .form-group
+                label.control-label.col-xs-2(for='jobTitle') Job Title
+                .col-xs-10
+                  input#jobTitle.form-control(type='text', placeholder='Job Title')
+              .form-group
+                label.control-label.col-xs-2(for='employer') Employer
+                .col-xs-10
+                  input#employer.form-control(type='text', placeholder='Employer')
+              .form-group
+                label.control-label.col-xs-2(for='empCity') City
+                .col-xs-10
+                  input#empCity.form-control(type='text', placeholder='City')
+              .form-group
+                label.control-label.col-xs-2(for='empState') State
+                .col-xs-10
+                  input#empState.form-control(type='text', placeholder='State')
+              .form-group
+                label(for='duties') Description of Duties:
+                textarea#duties.form-control(rows='5')
+              .position
+                h4 Additional Position:
+                .form-group
+                  label.control-label.col-xs-2(for='jobTitle') Job Title
+                  .col-xs-10
+                    input#jobTitle.form-control(type='text', placeholder='Job Title')
+                .form-group
+                  label.control-label.col-xs-2(for='employer') Employer
+                  .col-xs-10
+                    input#employer.form-control(type='text', placeholder='Employer')
+                .form-group
+                  label.control-label.col-xs-2(for='empCity') City
+                  .col-xs-10
+                    input#empCity.form-control(type='text', placeholder='City')
+                .form-group
+                  label.control-label.col-xs-2(for='empState') State
+                  .col-xs-10
+                    input#empState.form-control(type='text', placeholder='State')
+                .form-group
+                  label(for='duties') Description of Duties:
+                  textarea#duties.form-control(rows='5')
+                .position
+                  h4 Additional:
+                  .form-group
+                    label.control-label.col-xs-2(for='jobTitle') Job Title
+                    .col-xs-10
+                      input#jobTitle.form-control(type='text', placeholder='Job Title')
+                  .form-group
+                    label.control-label.col-xs-2(for='employer') Employer
+                    .col-xs-10
+                      input#employer.form-control(type='text', placeholder='Employer')
+                  .form-group
+                    label.control-label.col-xs-2(for='empCity') City
+                    .col-xs-10
+                      input#empCity.form-control(type='text', placeholder='City')
+                  .form-group
+                    label.control-label.col-xs-2(for='empState') State
+                    .col-xs-10
+                      input#empState.form-control(type='text', placeholder='State')
+                  .form-group
+                    label(for='duties') Description of Duties:
+                    textarea#duties.form-control(rows='5')
+              .form-group
+                label(for='skills') General Applicant Skills:
+                textarea#skills.form-control(rows='3')
+            .form-group
+              .col-xs-offset-2.col-xs-10
+                button.btn.btn-primary(type='submit') Submit Responses
+    .panel-footer
+      p © Rando Corp.

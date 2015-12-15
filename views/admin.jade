@@ -1,0 +1,48 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Rando Corp. Applications Admin
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        // Optional Bootstrap theme
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='style.css')
+    h1(align='center') Rando Corp. Application Admin Page
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    style(type='text/css').
+        .bs-example{
+            margin: 20px;
+        }
+    body
+        .bs-example
+            nav.navbar.navbar-default(role='navigation')
+                // Brand and toggle get grouped for better mobile display
+                .navbar-header
+                    button.navbar-toggle(type='button', data-target='#navbarCollapse', data-toggle='collapse')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='index.html') Rando Corp. Application
+                // Collection of nav links, forms, and other content for toggling
+                #navbarCollapse.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='admin.html') Admin
+        .panel.panel-default
+            .panel-heading Applicant Search Form
+            .panel-body
+                | Fill in as many fields as desired below to search for applicants.
+                form.navbar-form.navbar-center(role='search')
+                    .form-group
+                        p
+                            input.form-control(type='text', placeholder='name')
+                        p
+                            input.form-control(type='text', placeholder='location')
+                        p
+                            input.form-control(type='text', placeholder='skills')
+                    button.btn.btn-default(type='submit') Submit
+        .panel-footer
+            p © Rando Corp.
